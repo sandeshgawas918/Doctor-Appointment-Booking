@@ -68,7 +68,7 @@ const CategorySearch = () => {
               </Link>
             ))
           : [1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-              <Skeleton className="h-[150px] w-[150px] rounded-lg animate-pulse flex flex-col gap-2 items-center justify-center p-5 m-5" />
+              <Skeleton key={index} className="h-[150px] w-[150px] rounded-lg animate-pulse flex flex-col gap-2 items-center justify-center p-5 m-5" />
             ))}
       </section>
     </div>

@@ -52,7 +52,7 @@ const DoctorList = ({ AllDoctorList, heading = "Popular Doctors" }) => {
           : // skeleton effect
           [1, 2, 3, 4, 5].map((item, index) => (
             //   <div className=" h-[400px] w-full bg-slate-200 rounded-lg animate-pulse "></div>
-            <Skeleton className="w-full h-[390px] rounded-lg" />
+            <Skeleton key={index} className="w-full h-[390px] rounded-lg" />
           ))}
       </section>
     </div>
