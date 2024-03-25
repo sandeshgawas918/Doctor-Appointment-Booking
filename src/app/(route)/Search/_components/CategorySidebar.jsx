@@ -41,7 +41,7 @@ const CategorySidebar = () => {
           <CommandGroup heading="Suggestions">
             {CategoryList &&
               CategoryList.map((category, index) => (
-                <Link href={`/Search/${category.attributes.Name}`} className="">
+                <Link href={`/Search/${category.attributes.Name}`} className="" key={index}>
                   <CommandItem
                     className={`${
                       categoryUrl === category.attributes.Name && "bg-blue-100"
